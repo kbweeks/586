@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title><!-- Insert your title here --></title>
+</head>
+<body>
+    
+    <div id="teams">Info here</div>
+    
+    <script>
+        teams= new Array();
+        teams= ["Braves","Yankees","Nationals"];
+        wins=[62, 58, 66];
+        losses=[58, 89, 56];
+        
+        console.log(teams);
+        console.log(wins);
+        console.log(teams[0], teams[1]);
+
+        var htmlBuilder="";
+for (var i=0; i<teams.length; i++){
+    console.log(teams[i]);
+    console.log(htmlBuilder);
+    
+    if (losses[i] >= 60){
+        console.log("This team is horrible");
+    }else{
+        console.log('This team is not that bad.');
+        //code
+    }
+    
+    htmlBuilder += teams[i] + "Wins:" + wins[i] + "Losses: " + losses[i] + "<br/>";
+}
+
+document.getElementById('teams').innerHTML=htmlBuilder;
+
+var tempLeader = 0;
+var tempHighWins = 0;
+
+for (var i=0; i<teams.length; i++){
+    
+    if ( wins [i] >= tempHighWins);
+       tempHighWins = wins [i];
+       tempLeader= i;
+       console.log(i)
+}
+ console.log("The team with the most wins(" + tempHighWins + ") is " + teams[tempLeader]);  
+    
+
+    
+    </script>
+    <!-- Insert your content here -->
+</body>
+</html>

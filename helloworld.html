@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    
+    
+    <h1 id="head1">Hello World is the headline</h1>
+    <div id="x">hi</div>
+    
+    <p id="demo">The First paragraph</p>
+    <script type="application/javascript">
+        
+        document.write("<p>This is the second paragraph</p>");
+        
+    
+    </script>
+    <script>
+        var todaysDate = new Date();
+        var date1 = new Date("March 7, 1981 12:13:00");
+        console.log("page loaded");
+        console.log(todaysDate);
+        console.log(date1);
+        function writeHTML(){
+            document.getElementById("demo").innerHTML="My First JavaScript Function";
+            document.getElementById("demo").innerHTML="I am learning to write JavaScript";
+            document.getElementById("head1").innerHTML="Hello World </br> I am Kate";
+            document.getElementById("x").innerHTML=("<p>testing</p>");
+            console.log("button clicked")
+        }
+    </script>
+ <button type="button" onclick="writeHTML()">Try it</button>   
+</body>
+</html>

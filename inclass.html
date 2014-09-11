@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title><!-- Insert your title here --></title>
+</head>
+<body>
+    <h1 id="head1">Hello, me</h1>
+    <p id="demo">Second paragraph</p>
+    
+    <script type="application/javascript">
+        document.getElementById("head1").innerHTML="Hello, " + name;
+        
+        var name = "Kate";
+        var todaysDate = new Date();
+        function writeHTML(){
+            document.getElementById("demo").innerHTML="WOO HOO!";
+        }
+        
+    </script>
+    <button type="button" onclick="writeHTML()">Try it</button>   
+</body>
+</html>
